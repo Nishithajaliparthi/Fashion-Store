@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE — Curated Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="index.html">LUXE<span>.</span></a>
+  <nav class="main-nav"><a class="active" href="index.html">Home</a><a href="#shop">Shop</a><a href="#story">Our story</a></nav>
+  <div class="header-actions"><a href="wishlist.html" class="icon-link">Wishlist <span id="wish-count" class="count">0</span></a><a id="account-link" href="login.html" class="icon-link">Sign in</a><button class="menu-toggle" aria-label="Toggle menu">☰</button></div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">THE NEW SEASON · 2026</p><h1>Quiet style.<br><em>Lasting impact.</em></h1><p class="hero-text">Thoughtful pieces, beautiful textures and effortless silhouettes. Discover a more considered wardrobe.</p><a href="#shop" class="button button-dark">Explore collection <span>↗</span></a></div>
+    <div class="hero-image" role="img" aria-label="Minimal neutral fashion editorial"></div>
+    <div class="hero-index">01 / 04 &nbsp; — &nbsp; THE EDIT</div>
+  </section>
+  <section class="intro section-wrap" id="story"><p class="eyebrow">LESS, BUT BETTER</p><h2>Made to be worn.<br><em>Loved for longer.</em></h2><p>Modern essentials with a timeless point of view. A little less noise, a lot more intention.</p></section>
+  <section class="shop-section section-wrap" id="shop">
+    <div class="section-heading"><div><p class="eyebrow">THE LUXE COLLECTION</p><h2>Considered <em>essentials</em></h2></div><span class="muted" id="product-total">0 pieces</span></div>
+    <div class="toolbar"><label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Search the collection..." aria-label="Search products"></label><select id="category-filter" aria-label="Filter by category"><option value="all">All categories</option><option>Clothing</option><option>Bags</option><option>Shoes</option><option>Accessories</option></select><select id="sort-filter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A to Z</option></select></div>
+    <div id="product-grid" class="product-grid"></div>
+    <p id="empty-state" class="empty-state hidden">No pieces match your search. Try another filter.</p>
+  </section>
+  <section class="newsletter"><p class="eyebrow">A NOTE FROM LUXE</p><h2>Good things, <em>occasionally.</em></h2><p>New arrivals, thoughtful edits and a little inspiration.</p><form id="newsletter-form"><input type="email" placeholder="Your email address" required><button class="button button-light">Join us ↗</button></form><small id="newsletter-message"></small></section>
+<footer class="footer"><a class="wordmark" href="index.html">LUXE<span>.</span></a><p>Wear what matters.</p><div><a href="wishlist.html">Wishlist</a><a href="admin.html">Manage products</a></div><small>© 2026 LUXE. Demo fashion store.</small></footer>
+<script src="js/app.js"></script><script src="js/products.js"></script>
+</body></html>
